@@ -75,10 +75,19 @@ lgetWordStructure("Check-list")
 //*4**. Написать функцию, которая проверяет, является ли слово палиндромом
 // e.g. function isPalindrom(word)
 
-const isPalindrom = word => word.toLowerCase().split('').reverse().join('') === word.toLowerCase();
+function isPolindrom(word) {
+    return word === word.split("").reverse().join("")
+}
 
-console.log(isPalindrom("abba"))
-console.log(isPalindrom("Abba"))
+[
+    "motuna",
+    "abba",
+    "Abba",
+].forEach(function(word){
+    console.log(`word=${word}, isPolindrom? ${isPolindrom(word)}`)
+})
+
+
 
 
 
