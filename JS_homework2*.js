@@ -88,11 +88,3 @@ function isPolindrom(word) {
 })
 
 
-
-
-
-
-
-
-
-
